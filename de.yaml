@@ -1,0 +1,230 @@
+﻿common:
+    btn:
+        cancel: |
+            {{UN('CROSS MARK','WORD JOINER')}} Abbrechen
+        back: |
+            ↩️
+    cancelled: |
+        🔹 Abbgebrochen. Was sonst noch?
+    noposts: |
+        🔹 Sie haben keine Beiträge. {{UN('THINKING FACE')}}
+    notfound: |
+        Der Beitrag wurde gelöscht oder gepostet.
+    unknown: |
+        🤔 Nicht erkannt. Wählen Sie einen Befehl aus dem Menü aus.
+    langname: |
+        🇩🇪 Deutsch 
+    
+home:
+    welcome: |
+        🔸 @printfbot - <b>Schweizer Messer - Formatierungswerkzeug für Beiträge</b>.
+
+        Schicken Sie mir bitte einen neuen Beitrag. Sie können Text, Foto, Audio, Video, Stimme oder Aufkleber senden.
+
+        Ihre Formatierungsmodus ist <b>{{user.parse_mode}}</b>. Sie können /html, /markdown oder /native auswählen.
+mainkb:
+    post: |
+        {{UN('WRITING HAND','EMOJI MODIFIER FITZPATRICK TYPE-1-2','WORD JOINER')}} Neuer Beitrag
+    poll: |
+        {{UN('BALLOT BOX WITH BALLOT','WORD JOINER')}} Neue Umfrage
+    clean: |
+        {{UN('WASTEBASKET','WORD JOINER')}} Alles löschen!
+    preview: |
+        {{UN('EYES','WORD JOINER')}} Vorschau
+    settings: |
+        {{UN('HAMMER AND WRENCH','WORD JOINER')}} Einstellungen
+    help: |
+        {{UN('BLACK QUESTION MARK ORNAMENT','WORD JOINER')}} Hilfe
+
+post:
+    kb:
+        reactions: |
+            {{UN('THUMBS UP SIGN')}} Reaktionen hinzufügen
+        remove_reactions: |
+            {{UN('THUMBS UP SIGN')}} Reaktionen entfernen
+        keyboard: |
+            {{UN('KEYBOARD')}} Knöpfe hinzufügen
+        remove_keyboard: |
+            {{UN('KEYBOARD')}} Knöpfe entfernen
+        caption: |
+            {{UN('KEYBOARD')}} Untertitel bearbeiten
+        wppreview: |
+            {{UN('EYES')}} Vorschau: {%if post.data.wppreview%}On{%else%}Off{%endif%}
+        delete: |
+            {{UN('WASTEBASKET')}} Löschen
+        publish: |
+            {{UN('OUTBOX TRAY')}} Posten
+    error: |
+        🔹 Beim Senden des Beitrags ein Fehler aufgetreten, wahrscheinlich ein Formatierungsfehler. 
+            
+        <code>{{error}}</code>
+        
+        🔹 Der Beitrag korregieren und wieder posten.
+    notsupport: |
+        🔹 Der Bot unterstützt nicht solche Art von Beiträge. 😔
+        
+format:
+    html: |
+        🔹 Sie haben <b>html</b> ausgewählt.
+        
+        <b>Fett</b>
+        <code>&lt;b&gt;Fett&lt;/b&gt; oder &lt;strong&gt;Fett&lt;/strong&gt;</code>
+        
+        <i>Schräg</i>
+        <code>&lt;i&gt;Schräg&lt;/i&gt; oder &lt;em&gt;Schräg&lt;/em&gt;</code>
+        
+        <a href="http://www.example.com/">Link mit Bezeichnung</a>
+        <code>&lt;a href="http://www.example.com/"&gt;Link mit Bezeichnung&lt;/a&gt;</code>
+        
+        <code>Dicktengleiche Schrift</code>
+        <code>&lt;code&gt;Dicktengleiche Schrift&lt;/code&gt;</code>
+        
+        <pre>Dicktengleiches Textabsatz</pre>
+        <code>&lt;pre&gt;Dicktengleiches Textabsatz&lt;/pre&gt;</code>
+    markdown: |
+        🔹 Sie haben <b>markdown</b> ausgewählt.
+        
+        <b>Fett</b>
+        <code>*Fett*</code>
+        
+        <i>Schräg</i>
+        <code>_Schräg_</code>
+        
+        <a href="http://www.example.com/">Link mit Bezeichnung</a>
+        <code>[Link mit Bezeichnung](http://www.example.com/)</code>
+        
+        <code>Dicktengleiche Schrift</code>
+        <code>`Dicktengleiche Schrift`</code>
+        
+        <pre>Dicktengleiches Textabsatz</pre>
+        <code>```Dicktengleiches Textabsatz```</code>
+    native: |
+        🔹 Sie haben <b>native</b> ausgewählt. Verwenden Sie bitte diese Formatierungsmodus beim Senden von formatiertem Text von einem anderen Ort.
+        
+reactions:
+    set: |
+        🔹 Wähle Sie bitte das zuletzt verwendete Emoji von unten oder ein anderes Emoji als Ihre Reaktionen auf den Beitrag aus.
+        Sie können von <b>ein</b> bis <b>sechs</b> Emojis hinzufügen.
+    notfound: |
+        🔹 Sie haben kein Emoji hinzugefügt.
+        Sie können von <b>ein</b> bis <b>sechs</b> Emojis hinzufügen.
+    toomany: |
+        🔹 Zu viel Emojis 
+        Sie können von <b>ein</b> bis <b>sechs</b> Emojis hinzufügen.
+    saved: |
+        🔹 Reaktion wurde gespeichert.
+    removed: |
+        Reaktion wurde gelöscht.
+        
+caption:
+    kb:
+        delete: |
+            {{UN('WASTEBASKET','WORD JOINER')}} Signatur löschen.
+    set: |
+        🔹 Den Text für die Signatur hochladen oder löschen:
+    deleted: |
+        🔹 Signatur wurde gelöscht.
+    saved: |
+        🔹 Signatur wurde gespeichert.
+
+keyboard:
+    set: |
+        🔹 Senden Sie mir bitte die Tastatur, um den Beitrag nach folgendem Muster hinzuzufügen:
+        
+        <code>Caption = http://example.com/</code>
+        
+        Sie können von <b>ein</b> bis <b>sechs</b> Knöpfe hinzufügen.
+    toomany: |
+        🔹 Zu viel Knöpfe.
+        Sie können von <b>ein</b> bis <b>sechs</b> Knöpfe hinzufügen.
+    error: |
+        🔹 Tastaturfehler aufgetreten, wahrscheinlich ein Formatierungsfehler. 
+        {%if error%}    
+        <code>{{error}}</code>
+        {%endif%}
+        
+        🔹 Der Text korregieren und wieder senden.
+    saved: |
+        🔹 Tastatur wurde gespeichert.
+    removed: |
+        Testatur wurde gelöscht.
+
+publish:
+    kb:
+        share: |
+            {{UN('PAGE WITH CURL')}} Senden...
+    published: |
+        ✅ Ihren Beitrag ist zum Posten bereit. Jetzt können Sie ihn an Ihre Gruppe oder Ihren Kanal senden.
+
+vote: 
+    processed: |
+        {%if remove%}Ihre Stimme wurde gelöscht.{%else%}Ihre Stimme wurde gezählt.{%endif%}
+        {%if later%} Der Beitrag wird bald aktualisiert.{%endif%}
+    notfound: |
+        Unbekannter oder gelöschter Beitrag. Es tut mir leid! {{UN('PENSIVE FACE')}}
+        
+delete: 
+    deleted: |
+        Beitrag wurde gelöscht. {{UN('PENSIVE FACE')}} 
+    deletedall: |
+        🔹 Ihre Beiträte wurden gelöscht.  {{UN('PENSIVE FACE')}}
+        
+inline:
+    new: |
+        Einen neuen Beitrag schreiben.
+    post: |
+        {%if emojis%}
+        Posten mit {{emojis|join(' / ')}}
+        {%else%}
+        Posten
+        {%endif%}
+    error: |
+        Formatierungsfehler. Sie benötigen Hilfe.
+    share:
+        text: |
+            Einen Beitrag posten.
+        document: |
+            Eine Datei senden.
+        video: |
+            Ein Video senden.
+        voice: |
+            Eine Stimme senden.
+
+settings:
+    kb:
+        lang: |
+            {{UN('GLOBE WITH MERIDIANS')}} Sprache
+        format: |
+            {{UN('MEMO')}} Modus: {{user.parse_mode}}
+        reactions: |
+            {{UN('THUMBS UP SIGN')}} Standardreaktionen
+        delreactions: |
+            {{UN('THUMBS UP SIGN')}} Reaktionen löschen
+        keyboard: |
+            {{UN('KEYBOARD')}} Standardtestatur
+        delkeyboard: |
+            {{UN('KEYBOARD')}} Testatur löschen
+        wppreview: |
+            {{UN('EYES')}} Vorschau: {%if user.default_wppreview%} An{%else%}Aus{%endif%}
+        
+        
+    title: |
+        Einstellungen. Wähle Sie die Einstellung, die Sie ändern möchten:
+    lang:
+        select: |
+            Ich spreche jetzt auf Deutsch. Welche Sprache möchten Sie nutzen?
+        selected: |
+            Prima! Jetzt werde ich mit Ihnen auf Deutsch sprechen! 👌
+            
+    reactions: |
+        🔹 Wähle Sie bitte das zuletzt verwendete Emoji von unten oder ein anderes Emoji für Ihre Standardreaktionen
+        Sie können von <b>ein</b> bis <b>sechs</b> Emojis hinzufügen.
+
+    keyboard: |
+        🔹 Senden Sie mir bitte die Standardtestatur nach folgendem Muster:
+        
+        <code>Caption = http://example.com/</code>
+        
+        Sie können von <b>ein</b> bis <b>sechs</b> Knöpfe hinzufügen.
+    keyboardpreview: |
+        Testatur Vorschau...

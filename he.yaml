@@ -1,0 +1,227 @@
+﻿common:
+    btn:
+        cancel: |
+            {{UN('CROSS MARK','WORD JOINER')}} ביטול
+        back: |
+            ↩️
+    cancelled: |
+        🔹 בוטל. מה עוד?
+    noposts: |
+        🔹 אין לך שום פוסט. {{UN('THINKING FACE')}}
+    notfound: |
+        הפוסט נמחק.
+    unknown: |
+        🤔 אני לא מבין בחר/י פקודה מהתפריט.
+    langname: |
+        🇮🇱 עברית
+    
+home:
+    welcome: |
+        🔸 @printfbot - <b>ארגז כלים לעיצוב ופרסום הודעות</b>.
+
+        שלח/י הודעה לייצירת פוסט חדש. ניתן לשלוח טקסט, תמונה, קובץ שמע, סרטון, הקלטה או מדבקה.
+
+        בחרת <b>{{user.parse_mode}}</b>. ניתן לבחור /html, /markdown או /native formatting mode.
+mainkb:
+    post: |
+        {{UN('WRITING HAND','EMOJI MODIFIER FITZPATRICK TYPE-1-2','WORD JOINER')}} פוסט חדש
+    poll: |
+        {{UN('BALLOT BOX WITH BALLOT','WORD JOINER')}} סקר חדש
+    clean: |
+        {{UN('WASTEBASKET','WORD JOINER')}} מחק/י הכל
+    preview: |
+        {{UN('EYES','WORD JOINER')}} תצוגה מקדימה
+    settings: |
+        {{UN('HAMMER AND WRENCH','WORD JOINER')}} הגדרות
+    help: |
+        {{UN('BLACK QUESTION MARK ORNAMENT','WORD JOINER')}} עזרה
+
+post:
+    kb:
+        reactions: |
+            {{UN('THUMBS UP SIGN')}} הוספת לחצנים
+        remove_reactions: |
+            {{UN('THUMBS UP SIGN')}} הסרת לחצנים
+        keyboard: |
+            {{UN('KEYBOARD')}} הוספת כפתורים
+        remove_keyboard: |
+            {{UN('KEYBOARD')}} הסרת כפתורים
+        caption: |
+            {{UN('KEYBOARD')}} הוספת טקסט
+        wppreview: |
+            {{UN('EYES')}} תצוגת קישורים: {%if post.data.wppreview%}דלוק{%else%}כבוי{%endif%}
+        delete: |
+            {{UN('WASTEBASKET')}} מחק/י
+        publish: |
+            {{UN('OUTBOX TRAY')}} פרסום
+    error: |
+        🔹 היתה בעיה ביצירת הפוסט כנראה בגלל בעיה בפורמט הכתיבה.
+            
+        <code>{{error}}</code>
+        
+        🔹 יש לבדוק שכתבת נכון.
+    notsupport: |
+        🔹 הרובוט לא תומך בסוג ההודעות הזה. 😔
+        
+format:
+    html: |
+        🔹 הגדרת <b>html</b> style.
+        
+        <b>כתב מודגש</b>
+        <code>&lt;b&gt;מודגש&lt;/b&gt; או &lt;strong&gt;מודגש&lt;/strong&gt;</code>
+        
+        <i>כתב נטוי</i>
+        <code>&lt;i&gt;כתב נטוי&lt;/i&gt; או &lt;em&gt;כתב נטוי&lt;/em&gt;</code>
+        
+        <a href="http://www.example.com/">היפר קישור</a>
+        <code>&lt;a href="http://www.example.com/"&gt;היפר קישור&lt;/a&gt;</code>
+        
+        <code>כתב להעתקה מהירה</code>
+        <code>&lt;code&gt;כתב להעתקה מהירה;/code&gt;</code>
+        
+        <pre>pre-formatted fixed-width block</pre>
+        <code>&lt;pre&gt;pre-formatted fixed-width code block&lt;/pre&gt;</code>
+    markdown: |
+        🔹 הגדרת <b>markdown</b> style.
+        
+        <b>כתב מודגש</b>
+        <code>*כתב מודגש*</code>
+        
+        <i>כתב נטוי</i>
+        <code>_כתב נטוי_</code>
+        
+        <a href="http://www.example.com/">היפר קישור</a>
+        <code>[טקסט](http://www.example.com/)</code>
+        
+        <code>כתב להעתקה מהירה</code>
+        <code>`כתב להעתקה מהירה`</code>
+        
+        <pre>pre-formatted fixed-width block</pre>
+        <code>```pre-formatted fixed-width block```</code>
+    native: |
+        🔹 הגדרת <b>native</b> style. תשתמש/י במצב הזה בשביל עיצוב טקסט עצמי או בשביל הודעות מועברות.
+        
+reactions:
+    set: |
+        🔹 בחר/י אימוג'י מהמקלדת למטה או מתפריט האימוג'ים כדי להוסיף לחצנים לפוסט.
+        ניתן לבחור בין <b>אחד</b> ל- <b>שישה</b> לחצני אימוג'ים.
+    notfound: |
+        🔹 אני לא רואה שום אימוג'י.
+        ניתן לבחור בין <b>אחד</b> ל- <b>שישיה</b> לחצני אימוג'ים.
+    toomany: |
+        🔹 יצרת יותר מדי לחצני אימוג'ים.
+        ניתן לבחור רק בין <b>אחד</b> ל- <b>שישה</b> לחצני אימוג'ים.
+    saved: |
+        🔹 בקשתך נשמרה.
+    removed: |
+        לחצנים הוסרו.
+        
+caption:
+    kb:
+        delete: |
+            {{UN('WASTEBASKET','WORD JOINER')}} מחק/י טקסט
+    set: |
+        🔹 שלח/י טקסט להוספה להודעה או מחק/י אותו:
+    deleted: |
+        🔹 הטקסט הוסר.
+    saved: |
+        🔹 הטקסט נשמר.
+        
+keyboard:
+    set: |
+        🔹 שלח/י לי כפתורים להוספת לפוסט בצורה הבאה:
+
+        <code>כפתור = http://example.com/</code>
+        
+        ניתן לבחור בין <b>אחד</b> ל- <b>שישה</b> כפתורים.
+    toomany: |
+        🔹 יותר מדי כפתורים.
+        ניתן לבחור בין <b>אחד</b> ל- <b>שישה</b> כפתורים.
+    error: |
+        היתה בעיה בשליחת הפוסט כנראה בגלל שגיאת עיצוב.
+        {%if error%}    
+        <code>{{error}}</code>
+        {%endif%}
+        
+        יש לבדוק שכתבת נכון.
+    saved: |
+        🔹 מקלדת הכפתורים נשמרה.
+    removed: |
+        מקלדת הכפתורים הוסרה.
+
+publish:
+    kb:
+        share: |
+            {{UN('PAGE WITH CURL')}} שיתוף...
+    published: |
+        ✅ הפוסט מוכן. כעת ניתן לשתף אותו לערוץ או לקבוצה שלך.
+
+vote: 
+    processed: |
+        {%if remove%}הסקר שלך הוסר.{%else%}הסקר שלך נוצר.{%endif%}
+        {%if later%} הפוסט יתעדכן בקרוב.{%endif%}
+    notfound: |
+        פוסט מחוק או לא מוכר. Sorry! {{UN('PENSIVE FACE')}}
+        
+delete: 
+    deleted: |
+        הפוסט נמחק. {{UN('PENSIVE FACE')}}
+    deletedall: |
+        🔹 כל הפוסטים שלך נמחקו. {{UN('PENSIVE FACE')}}
+        
+inline:
+    new: |
+        צור/י פוסט חדש ברובוט.
+    post: |
+        {%if emojis%}
+        שלח פוסט עם {{emojis|join(' / ')}}
+        {%else%}
+        שלח פוסט
+        {%endif%}
+    error: |
+        Formatting error. Go to pm to help.
+    share:
+        text: |
+            Share your text post.
+        document: |
+            Share your document.
+        video: |
+            Share your video.
+        voice: |
+            Share your voice.
+
+settings:
+    kb:
+        lang: |
+            {{UN('GLOBE WITH MERIDIANS')}} שפת הרובוט
+        format: |
+            {{UN('MEMO')}} תצורת כתיבה: {{user.parse_mode}}
+        reactions: |
+            {{UN('THUMBS UP SIGN')}} ברירת מחדל של לחצנים
+        delreactions: |
+            {{UN('THUMBS UP SIGN')}} הסרת ברירת מחדל של לחצנים
+        keyboard: |
+            {{UN('KEYBOARD')}} ברירת מחדל של כפתורים
+        delkeyboard: |
+            {{UN('KEYBOARD')}} הסרת ברירת מחדל של כפתורים
+        wppreview: |
+            {{UN('EYES')}} תצוגת קישורים: {%if user.default_wppreview%}דלוק{%else%}כבוי{%endif%}
+ 
+    title: |
+        אלו הן ההגדרות. בחר/י מה ברצונך לשנות:
+    lang:
+        select: |
+            כרגע אני מדבר איתך בעברית. באיזו שפה את/ה רוצה שאדבר איתך?
+        selected: |
+            אוקיי, עכשיו אני מדבר בעברית 👌
+            
+    reactions: |
+        🔹 בחר/י אימוג'ים שהיו בשימוש לאחרונה מהמקלדת מטה או שלח/י אימוג'ים אחרים כדי להגדירם כברירת מחדל.
+        ניתן לבחור בין <b>אחד</b> ל- <b>שישיה</b> לחצני אימוג'ים.
+
+    keyboard: |
+        🔹שלח/י לי כפתורים להגדה כברירת מחדל בצורה:
+        
+        <code>כפתור = http://example.com/</code>
+    keyboardpreview: |
+        הצגת מקלדת...

@@ -1,0 +1,228 @@
+﻿common:
+    btn:
+        cancel: |
+            {{UN('CROSS MARK','WORD JOINER')}} Cancel
+        back: |
+            ↩️
+    cancelled: |
+        🔹 Cancelled. What next?
+    noposts: |
+        🔹 You don't have any posts. {{UN('THINKING FACE')}}
+    notfound: |
+        Post was deleted or published.
+    unknown: |
+        🤔 I don't understand. Select a command from the menu.
+    langname: |
+        🇺🇸 English
+    
+home:
+    welcome: |
+        🔸 @printfbot - <b>swiss knife post formatting tool</b>.
+
+        Send me new post. You can send text, photo, audio, video, voice or sticker.
+
+        You select <b>{{user.parse_mode}}</b> formatting. You can select /html, /markdown or /native formatting mode.
+mainkb:
+    post: |
+        {{UN('WRITING HAND','EMOJI MODIFIER FITZPATRICK TYPE-1-2','WORD JOINER')}} New Post
+    poll: |
+        {{UN('BALLOT BOX WITH BALLOT','WORD JOINER')}} New Poll
+    clean: |
+        {{UN('WASTEBASKET','WORD JOINER')}} Delete All
+    preview: |
+        {{UN('EYES','WORD JOINER')}} Preview
+    settings: |
+        {{UN('HAMMER AND WRENCH','WORD JOINER')}} Settings
+    help: |
+        {{UN('BLACK QUESTION MARK ORNAMENT','WORD JOINER')}} Help
+
+post:
+    kb:
+        reactions: |
+            {{UN('THUMBS UP SIGN')}} Add Reactions
+        remove_reactions: |
+            {{UN('THUMBS UP SIGN')}} Remove Reactions
+        keyboard: |
+            {{UN('KEYBOARD')}} Add Buttons
+        remove_keyboard: |
+            {{UN('KEYBOARD')}} Remove Buttons
+        caption: |
+            {{UN('KEYBOARD')}} Edit Caption
+        wppreview: |
+            {{UN('EYES')}} Preview: {%if post.data.wppreview%}On{%else%}Off{%endif%}
+        delete: |
+            {{UN('WASTEBASKET')}} Delete
+        publish: |
+            {{UN('OUTBOX TRAY')}} Publish
+            {{UN('OUTBOX TRAY')}} Publish
+    error: |
+        🔹 There was error while sending post probably because invalid formatting.
+            
+        <code>{{error}}</code>
+        
+        🔹 Try to fix formatting and send your post again.
+    notsupport: |
+        🔹 Bot does not support this kind of message. 😔
+        
+format:
+    html: |
+        🔹 You set <b>html</b> style.
+        
+        <b>bold text</b>
+        <code>&lt;b&gt;bold&lt;/b&gt; or &lt;strong&gt;bold&lt;/strong&gt;</code>
+        
+        <i>italic text</i>
+        <code>&lt;i&gt;italic&lt;/i&gt; or &lt;em&gt;italic&lt;/em&gt;</code>
+        
+        <a href="http://www.example.com/">inline URL</a>
+        <code>&lt;a href="http://www.example.com/"&gt;inline URL&lt;/a&gt;</code>
+        
+        <code>inline fixed-width</code>
+        <code>&lt;code&gt;inline fixed-width&lt;/code&gt;</code>
+        
+        <pre>pre-formatted fixed-width block</pre>
+        <code>&lt;pre&gt;pre-formatted fixed-width code block&lt;/pre&gt;</code>
+    markdown: |
+        🔹 You set <b>markdown</b> style.
+        
+        <b>bold text</b>
+        <code>*bold text*</code>
+        
+        <i>italic text</i>
+        <code>_italic text_</code>
+        
+        <a href="http://www.example.com/">inline URL</a>
+        <code>[text](http://www.example.com/)</code>
+        
+        <code>inline fixed-width</code>
+        <code>`inline fixed-width code`</code>
+        
+        <pre>pre-formatted fixed-width block</pre>
+        <code>```pre-formatted fixed-width block```</code>
+    native: |
+        🔹 You set <b>native</b> style. Use this mode for native client formatting or when forwarding messages from other places.
+        
+reactions:
+    set: |
+        🔹 Select last used emojis from below or send some emoji for add reactions to post or select last used from keyboard.
+        You can use from <b>one</b> to <b>six</b> emoji for reactions.
+    notfound: |
+        🔹 I don't see any emoji.
+        You can use from <b>one</b> to <b>six</b> emoji for reactions.
+    toomany: |
+        🔹 Too many emoji for reactions.
+        You can use from <b>one</b> to <b>six</b> emoji for reactions.
+    saved: |
+        🔹 Reactions was saved.
+    removed: |
+        Reactions was removed.  
+        
+caption:
+    kb:
+        delete: |
+            {{UN('WASTEBASKET','WORD JOINER')}} Delete caption
+    set: |
+        🔹 Send text for caption or delete it:
+    deleted: |
+        🔹 Caption was removed.
+    saved: |
+        🔹 Caption was saved.
+        
+keyboard:
+    set: |
+        🔹 Send me keyboard for add to post in following format:
+        
+        <code>Caption = http://example.com/</code>
+        
+        You can use from <b>one</b> to <b>six</b> buttons.
+    toomany: |
+        🔹 Too many buttons.
+        You can use from <b>one</b> to <b>six</b> buttons.
+    error: |
+        There was error while sending post probably becouse invalid formatting.
+        {%if error%}    
+        <code>{{error}}</code>
+        {%endif%}
+        
+        Try to fix formatting and send your keyboard again.
+    saved: |
+        🔹 Keyboard was saved.
+    removed: |
+        Keyboard was removed.  
+
+publish:
+    kb:
+        share: |
+            {{UN('PAGE WITH CURL')}} Share...
+    published: |
+        ✅ Your posts will cookied done. Now you can share it to your channel or group.
+            
+vote: 
+    processed: |
+        {%if remove%}Your vote removed.{%else%}Your vote accepted.{%endif%}
+        {%if later%} Post will be updated soon.{%endif%}
+    notfound: |
+        Unknown or deleted post. Sorry! {{UN('PENSIVE FACE')}}
+        
+delete: 
+    deleted: |
+        Post was deleted. {{UN('PENSIVE FACE')}} 
+    deletedall: |
+        🔹 All your posts was deleted. {{UN('PENSIVE FACE')}}
+        
+inline:
+    new: |
+        Write new post in bot.
+    post: |
+        {%if emojis%}
+        Send post with {{emojis|join(' / ')}}
+        {%else%}
+        Send post
+        {%endif%}
+    error: |
+        Formatting error. Go to pm to help.
+    share:
+        text: |
+            Share your text post.
+        document: |
+            Share your document.
+        video: |
+            Share your video.
+        voice: |
+            Share your voice.
+
+settings:
+    kb:
+        lang: |
+            {{UN('GLOBE WITH MERIDIANS')}} Bot language
+        format: |
+            {{UN('MEMO')}} Format: {{user.parse_mode}}
+        reactions: |
+            {{UN('THUMBS UP SIGN')}} Default reactions
+        delreactions: |
+            {{UN('THUMBS UP SIGN')}} Remove Default reactions
+        keyboard: |
+            {{UN('KEYBOARD')}} Default buttons
+        delkeyboard: |
+            {{UN('KEYBOARD')}} Remove Default buttons
+        wppreview: |
+            {{UN('EYES')}} Link previews: {%if user.default_wppreview%}On{%else%}Off{%endif%}
+ 
+    title: |
+        There are settings. Select what do you want to change:
+    lang:
+        select: |
+            At the moment I speak with you in English. Which language do you want me to switch to?
+        selected: |
+            Okay, now I'm going to talk to you in English 👌
+            
+    reactions: |
+        🔹 Select last used emojis from below or send some emoji for set as default or select last used from keyboard.
+        You can use from <b>one</b> to <b>six</b> emoji for reactions.
+
+    keyboard: |
+        🔹 Send me keyboard for set as default in following format:
+        
+        <code>Caption = http://example.com/</code>
+    keyboardpreview: |
+        Keyboard preview...

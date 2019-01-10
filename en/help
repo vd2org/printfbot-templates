@@ -1,0 +1,21 @@
+🔸 @printfbot - <b>swiss knife post formatting tool</b>.
+
+Bot is created for easy and fast formatting of posts for channels and groups.
+
+Supports adding buttons with reactions and links.
+
+In order to create a post, send text, photo, audio, video, voice or sticker to the bot.
+
+For text posts, you can use html, markdown, or native formatting.
+
+Then you can edit it, add buttons with reaction, links, and to turn off the preview.
+
+When you're done, click the <b> Publish </b> and post to the channel, group, or chat . One post can be sent to multiple channels, groups and chats - reactions are common to all places where post sent.
+
+The bot can be used in inline mode to quickly create posts without leaving the chat.
+
+In the settings, you can set the default reactions and links and change the bot's language.
+
+News channel: @RocketBotsNews
+
+For technical support and bots development, please contact @IAmRocket
