@@ -137,7 +137,7 @@ keyboard:
         You can use from <b>one</b> to <b>six</b> buttons.
     toomany: |
         🔹 Too many buttons.
-        You can use from <b>one</b> to <b>six</b> buttons.
+        You can use from <b>one</b> to <b>12</b> buttons.
     error: |
         There was error while sending post probably becouse invalid formatting.
         {%if error%}    
