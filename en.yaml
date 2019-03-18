@@ -54,7 +54,6 @@ post:
             {{UN('WASTEBASKET')}} Delete
         publish: |
             {{UN('OUTBOX TRAY')}} Publish
-            {{UN('OUTBOX TRAY')}} Publish
     error: |
         🔹 There was error while sending post probably because invalid formatting.
             
