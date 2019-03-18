@@ -136,7 +136,7 @@ keyboard:
         Sie können von <b>ein</b> bis <b>sechs</b> Knöpfe hinzufügen.
     toomany: |
         🔹 Zu viel Knöpfe.
-        Sie können von <b>ein</b> bis <b>sechs</b> Knöpfe hinzufügen.
+        Sie können von <b>ein</b> bis <b>12</b> Knöpfe hinzufügen.
     error: |
         🔹 Tastaturfehler aufgetreten, wahrscheinlich ein Formatierungsfehler. 
         {%if error%}    
