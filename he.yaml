@@ -133,7 +133,7 @@ keyboard:
 
         <code>כפתור = http://example.com/</code>
         
-        ניתן לבחור בין <b>אחד</b> ל- <b>שישה</b> כפתורים.
+        ניתן לבחור בין <b>אחד</b> ל- <b>12</b> כפתורים.
     toomany: |
         🔹 יותר מדי כפתורים.
         ניתן לבחור בין <b>אחד</b> ל- <b>12</b> כפתורים.

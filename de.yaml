@@ -133,7 +133,7 @@ keyboard:
         
         <code>Caption = http://example.com/</code>
         
-        Sie können von <b>ein</b> bis <b>sechs</b> Knöpfe hinzufügen.
+        Sie können von <b>ein</b> bis <b>12</b> Knöpfe hinzufügen.
     toomany: |
         🔹 Zu viel Knöpfe.
         Sie können von <b>ein</b> bis <b>12</b> Knöpfe hinzufügen.

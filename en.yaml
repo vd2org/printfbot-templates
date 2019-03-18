@@ -134,7 +134,7 @@ keyboard:
         
         <code>Caption = http://example.com/</code>
         
-        You can use from <b>one</b> to <b>six</b> buttons.
+        You can use from <b>one</b> to <b>12</b> buttons.
     toomany: |
         🔹 Too many buttons.
         You can use from <b>one</b> to <b>12</b> buttons.
