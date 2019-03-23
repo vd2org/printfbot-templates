@@ -1,4 +1,4 @@
-﻿common:
+common:
     btn:
         cancel: |
             {{UN('CROSS MARK','WORD JOINER')}} Отмена
@@ -185,8 +185,12 @@ inline:
             Отправить ваш пост.
         document: |
             Отправить ваш документ.
+        animation: |
+            Отправить вашу анимацию.
         video: |
             Отправить ваше видео.
+        sticker: |
+            Отправить ваш стикер.
         voice: |
             Отправить ваш войс.
 

@@ -1,4 +1,4 @@
-﻿common:
+common:
     btn:
         cancel: |
             {{UN('CROSS MARK','WORD JOINER')}} Cancel
@@ -185,8 +185,12 @@ inline:
             Share your text post.
         document: |
             Share your document.
+        animation: |
+            Share your animation.
         video: |
             Share your video.
+        sticker: |
+            Share your sticker.
         voice: |
             Share your voice.
 
