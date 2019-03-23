@@ -1,4 +1,4 @@
-common:
+﻿common:
     btn:
         cancel: |
             {{UN('CROSS MARK','WORD JOINER')}} ביטול
@@ -122,6 +122,13 @@ caption:
             {{UN('WASTEBASKET','WORD JOINER')}} מחק/י טקסט
     set: |
         🔹 שלח/י טקסט להוספה להודעה או מחק/י אותו:
+    error: |
+        🔹 There was error while sending post probably becouse invalid formatting.
+        {%if error%}
+        <code>{{error}}</code>
+        {%endif%}
+
+        Try to fix formatting and send your caption again.
     deleted: |
         🔹 הטקסט הוסר.
     saved: |
@@ -138,7 +145,7 @@ keyboard:
         🔹 יותר מדי כפתורים.
         ניתן לבחור בין <b>אחד</b> ל- <b>12</b> כפתורים.
     error: |
-        היתה בעיה בשליחת הפוסט כנראה בגלל שגיאת עיצוב.
+        🔹 היתה בעיה בשליחת הפוסט כנראה בגלל שגיאת עיצוב.
         {%if error%}    
         <code>{{error}}</code>
         {%endif%}

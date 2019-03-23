@@ -1,4 +1,4 @@
-common:
+﻿common:
     btn:
         cancel: |
             {{UN('CROSS MARK','WORD JOINER')}} Abbrechen
@@ -122,6 +122,13 @@ caption:
             {{UN('WASTEBASKET','WORD JOINER')}} Signatur löschen.
     set: |
         🔹 Den Text für die Signatur hochladen oder löschen:
+    error: |
+        🔹 There was error while sending post probably becouse invalid formatting.
+        {%if error%}
+        <code>{{error}}</code>
+        {%endif%}
+
+        Try to fix formatting and send your caption again.
     deleted: |
         🔹 Signatur wurde gelöscht.
     saved: |

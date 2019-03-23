@@ -1,4 +1,4 @@
-common:
+﻿common:
     btn:
         cancel: |
             {{UN('CROSS MARK','WORD JOINER')}} Cancel
@@ -122,6 +122,13 @@ caption:
             {{UN('WASTEBASKET','WORD JOINER')}} Delete caption
     set: |
         🔹 Send text for caption or delete it:
+    error: |
+        🔹 There was error while sending post probably becouse invalid formatting.
+        {%if error%}
+        <code>{{error}}</code>
+        {%endif%}
+
+        Try to fix formatting and send your caption again.
     deleted: |
         🔹 Caption was removed.
     saved: |
@@ -138,7 +145,7 @@ keyboard:
         🔹 Too many buttons.
         You can use from <b>one</b> to <b>12</b> buttons.
     error: |
-        There was error while sending post probably becouse invalid formatting.
+        🔹 There was error while sending post probably becouse invalid formatting.
         {%if error%}    
         <code>{{error}}</code>
         {%endif%}
@@ -216,6 +223,10 @@ settings:
     lang:
         select: |
             At the moment I speak with you in English. Which language do you want me to switch to?
+
+            <i>If you want to spaek with bot in your language, you can translate it here:</i>
+
+            https://github.com/vd2org/printfbot-templates
         selected: |
             Okay, now I'm going to talk to you in English 👌
             
