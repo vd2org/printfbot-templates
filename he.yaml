@@ -46,6 +46,10 @@ post:
             {{UN('KEYBOARD')}} הוספת כפתורים
         remove_keyboard: |
             {{UN('KEYBOARD')}} הסרת כפתורים
+        attach: |
+            {{UN('HANDBAG')}} Attach
+        remove_attach: |
+            {{UN('HANDBAG')}} Remove Attach
         caption: |
             {{UN('KEYBOARD')}} הוספת טקסט
         wppreview: |
@@ -155,6 +159,19 @@ keyboard:
         🔹 מקלדת הכפתורים נשמרה.
     removed: |
         מקלדת הכפתורים הוסרה.
+
+
+attach:
+    set: |
+        🔹 Send me photo or url to attach to the post:
+
+        <code>https://example.com/</code>
+    error: |
+        🔹 There was error while attaching. You can attach only photo or url.
+    saved: |
+        🔹 Attached!
+    removed: |
+        Attach was removed.
 
 publish:
     kb:

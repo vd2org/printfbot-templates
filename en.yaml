@@ -46,6 +46,10 @@ post:
             {{UN('KEYBOARD')}} Add Buttons
         remove_keyboard: |
             {{UN('KEYBOARD')}} Remove Buttons
+        attach: |
+            {{UN('HANDBAG')}} Attach
+        remove_attach: |
+            {{UN('HANDBAG')}} Remove Attach
         caption: |
             {{UN('KEYBOARD')}} Edit Caption
         wppreview: |
@@ -154,7 +158,19 @@ keyboard:
     saved: |
         🔹 Keyboard was saved.
     removed: |
-        Keyboard was removed.  
+        Keyboard was removed.
+
+attach:
+    set: |
+        🔹 Send me photo or url to attach to the post:
+
+        <code>https://example.com/</code>
+    error: |
+        🔹 There was error while attaching. You can attach only photo or url.
+    saved: |
+        🔹 Attached!
+    removed: |
+        Attach was removed.
 
 publish:
     kb:
