@@ -17,7 +17,7 @@
     
 home:
     welcome: |
-        🔸 @printfbot - <b>Schweizer Messer - Formatierungswerkzeug für Beiträge</b>.
+        🔸 @printfbot v{{version}} - <b>Schweizer Messer - Formatierungswerkzeug für Beiträge</b>.
 
         Schicken Sie mir bitte einen neuen Beitrag. Sie können Text, Foto, Audio, Video, Stimme oder Aufkleber senden.
 

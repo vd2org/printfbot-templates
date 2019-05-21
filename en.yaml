@@ -17,7 +17,7 @@
     
 home:
     welcome: |
-        🔸 @printfbot - <b>swiss knife post formatting tool</b>.
+        🔸 @printfbot v{{version}} - <b>swiss knife post formatting tool</b>.
 
         Send me new post. You can send text, photo, audio, video, voice or sticker.
 

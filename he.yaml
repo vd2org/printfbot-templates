@@ -17,7 +17,7 @@
     
 home:
     welcome: |
-        🔸 @printfbot - <b>ארגז כלים לעיצוב ופרסום הודעות</b>.
+        🔸 @printfbot v{{version}} - <b>ארגז כלים לעיצוב ופרסום הודעות</b>.
 
         שלח/י הודעה לייצירת פוסט חדש. ניתן לשלוח טקסט, תמונה, קובץ שמע, סרטון, הקלטה או מדבקה.
 
