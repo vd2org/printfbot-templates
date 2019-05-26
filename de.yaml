@@ -54,6 +54,8 @@ post:
             {{UN('KEYBOARD')}} Untertitel bearbeiten
         wppreview: |
             {{UN('EYES')}} Vorschau: {%if post.data.wppreview%}On{%else%}Off{%endif%}
+        repost: |
+            ↪️ Allow repost: {%if post.repost%}On{%else%}Off{%endif%}
         delete: |
             {{UN('WASTEBASKET')}} Löschen
         publish: |
@@ -143,6 +145,10 @@ keyboard:
         🔹 Senden Sie mir bitte die Tastatur, um den Beitrag nach folgendem Muster hinzuzufügen:
         
         <code>Caption = http://example.com/</code>
+
+        To add repost-button set following:
+
+        <code>Repost = REPOST</code>
         
         Sie können von <b>ein</b> bis <b>12</b> Knöpfe hinzufügen.
     toomany: |
@@ -234,7 +240,8 @@ settings:
             {{UN('KEYBOARD')}} Testatur löschen
         wppreview: |
             {{UN('EYES')}} Vorschau: {%if user.default_wppreview%} An{%else%}Aus{%endif%}
-        
+        repost: |
+            ↪️ Allow repost: {%if user.default_repost%}On{%else%}Off{%endif%}
         
     title: |
         Einstellungen. Wähle Sie die Einstellung, die Sie ändern möchten:
@@ -252,7 +259,11 @@ settings:
         🔹 Senden Sie mir bitte die Standardtestatur nach folgendem Muster:
         
         <code>Caption = http://example.com/</code>
-        
-        Sie können von <b>ein</b> bis <b>sechs</b> Knöpfe hinzufügen.
+
+        To add repost-button set following:
+
+        <code>Repost = REPOST</code>
+
+        Sie können von <b>ein</b> bis <b>12</b> Knöpfe hinzufügen.
     keyboardpreview: |
         Testatur Vorschau...

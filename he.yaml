@@ -54,6 +54,8 @@ post:
             {{UN('KEYBOARD')}} הוספת טקסט
         wppreview: |
             {{UN('EYES')}} תצוגת קישורים: {%if post.data.wppreview%}דלוק{%else%}כבוי{%endif%}
+        repost: |
+            ↪️ Allow repost: {%if post.repost%}On{%else%}Off{%endif%}
         delete: |
             {{UN('WASTEBASKET')}} מחק/י
         publish: |
@@ -143,6 +145,10 @@ keyboard:
         🔹 שלח/י לי כפתורים להוספת לפוסט בצורה הבאה:
 
         <code>כפתור = http://example.com/</code>
+
+        To add repost-button set following:
+
+        <code>Repost = REPOST</code>
         
         ניתן לבחור בין <b>אחד</b> ל- <b>12</b> כפתורים.
     toomany: |
@@ -234,6 +240,8 @@ settings:
             {{UN('KEYBOARD')}} הסרת ברירת מחדל של כפתורים
         wppreview: |
             {{UN('EYES')}} תצוגת קישורים: {%if user.default_wppreview%}דלוק{%else%}כבוי{%endif%}
+        repost: |
+            ↪️ Allow repost: {%if user.default_repost%}On{%else%}Off{%endif%}
  
     title: |
         אלו הן ההגדרות. בחר/י מה ברצונך לשנות:
@@ -251,5 +259,11 @@ settings:
         🔹שלח/י לי כפתורים להגדה כברירת מחדל בצורה:
         
         <code>כפתור = http://example.com/</code>
+
+        To add repost-button set following:
+
+        <code>Repost = REPOST</code>
+
+        You can use from <b>one</b> to <b>12</b> buttons.
     keyboardpreview: |
         הצגת מקלדת...

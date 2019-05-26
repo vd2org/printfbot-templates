@@ -54,6 +54,8 @@ post:
             {{UN('KEYBOARD')}} Edit Caption
         wppreview: |
             {{UN('EYES')}} Preview: {%if post.data.wppreview%}On{%else%}Off{%endif%}
+        repost: |
+            ↪️ Allow repost: {%if post.repost%}On{%else%}Off{%endif%}
         delete: |
             {{UN('WASTEBASKET')}} Delete
         publish: |
@@ -143,6 +145,10 @@ keyboard:
         🔹 Send me keyboard for add to post in following format:
         
         <code>Caption = http://example.com/</code>
+
+        To add repost-button set following:
+
+        <code>Repost = REPOST</code>
         
         You can use from <b>one</b> to <b>12</b> buttons.
     toomany: |
@@ -233,6 +239,8 @@ settings:
             {{UN('KEYBOARD')}} Remove Default buttons
         wppreview: |
             {{UN('EYES')}} Link previews: {%if user.default_wppreview%}On{%else%}Off{%endif%}
+        repost: |
+            ↪️ Allow repost: {%if user.default_repost%}On{%else%}Off{%endif%}
  
     title: |
         There are settings. Select what do you want to change:
@@ -254,5 +262,11 @@ settings:
         🔹 Send me keyboard for set as default in following format:
         
         <code>Caption = http://example.com/</code>
+
+        To add repost-button set following:
+
+        <code>Repost = REPOST</code>
+
+        You can use from <b>one</b> to <b>12</b> buttons.
     keyboardpreview: |
         Keyboard preview...
