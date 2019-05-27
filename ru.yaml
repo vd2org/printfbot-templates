@@ -169,15 +169,15 @@ keyboard:
 
 attach:
     set: |
-        🔹 Send me photo or url to attach to the post:
+        🔹 Отправьте мне фото или ссылку для прикрепления к посту:
 
         <code>https://example.com/</code>
     error: |
-        🔹 There was error while attaching. You can attach only photo or url.
+        🔹 Ошибка при добавлении. Вы можете прикрепить только фото или ссылку.
     saved: |
-        🔹 Attached!
+        🔹 Прикреплено!
     removed: |
-        Attach was removed.
+        Прикрепление удалено.
 
 publish:
     kb:
@@ -204,7 +204,7 @@ inline:
         Написать новый пост.
     post: |
         {%if emojis%}
-        Отправи с {{emojis|join(' / ')}}
+        Отправить с {{emojis|join(' / ')}}
         {%else%}
         Отправить
         {%endif%}
