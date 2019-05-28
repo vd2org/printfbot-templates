@@ -109,14 +109,17 @@ format:
         
 reactions:
     set: |
-        🔹 Wähle Sie bitte das zuletzt verwendete Emoji von unten oder ein anderes Emoji als Ihre Reaktionen auf den Beitrag aus.
-        Sie können von <b>ein</b> bis <b>sechs</b> Emojis hinzufügen.
+        🔹 Select last used buttons from below or send some new for add reactions to post.
+
+        For create text buttons use <b>"|"</b> symbol as separator.
+
+        You can use from <b>one</b> to <b>six</b> buttons for reactions in a row and no more <b>six</b> rows.
     notfound: |
-        🔹 Sie haben kein Emoji hinzugefügt.
-        Sie können von <b>ein</b> bis <b>sechs</b> Emojis hinzufügen.
+        🔹 Wrong format.
+        You can use from <b>one</b> to <b>six</b> buttons for reactions in a row and no more <b>six</b> rows.
     toomany: |
-        🔹 Zu viel Emojis 
-        Sie können von <b>ein</b> bis <b>sechs</b> Emojis hinzufügen.
+        🔹 Too many buttons for reactions.
+        You can use from <b>one</b> to <b>six</b> buttons for reactions in a row and no more <b>six</b> rows.
     saved: |
         🔹 Reaktion wurde gespeichert.
     removed: |
@@ -252,9 +255,11 @@ settings:
             Prima! Jetzt werde ich mit Ihnen auf Deutsch sprechen! 👌
             
     reactions: |
-        🔹 Wähle Sie bitte das zuletzt verwendete Emoji von unten oder ein anderes Emoji für Ihre Standardreaktionen
-        Sie können von <b>ein</b> bis <b>sechs</b> Emojis hinzufügen.
+        🔹 Select last used buttons from below or send some new for set as default reactions.
 
+        For create text buttons use <b>"|"</b> symbol as separator.
+
+        You can use from <b>one</b> to <b>six</b> buttons for reactions in a row and no more <b>six</b> rows.
     keyboard: |
         🔹 Senden Sie mir bitte die Standardtestatur nach folgendem Muster:
         

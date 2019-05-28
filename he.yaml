@@ -109,14 +109,17 @@ format:
         
 reactions:
     set: |
-        🔹 בחר/י אימוג'י מהמקלדת למטה או מתפריט האימוג'ים כדי להוסיף לחצנים לפוסט.
-        ניתן לבחור בין <b>אחד</b> ל- <b>שישה</b> לחצני אימוג'ים.
+        🔹 Select last used buttons from below or send some new for add reactions to post.
+
+        For create text buttons use <b>"|"</b> symbol as separator.
+
+        You can use from <b>one</b> to <b>six</b> buttons for reactions in a row and no more <b>six</b> rows.
     notfound: |
-        🔹 אני לא רואה שום אימוג'י.
-        ניתן לבחור בין <b>אחד</b> ל- <b>שישיה</b> לחצני אימוג'ים.
+        🔹 Wrong format.
+        You can use from <b>one</b> to <b>six</b> buttons for reactions in a row and no more <b>six</b> rows.
     toomany: |
-        🔹 יצרת יותר מדי לחצני אימוג'ים.
-        ניתן לבחור רק בין <b>אחד</b> ל- <b>שישה</b> לחצני אימוג'ים.
+        🔹 Too many buttons for reactions.
+        You can use from <b>one</b> to <b>six</b> buttons for reactions in a row and no more <b>six</b> rows.
     saved: |
         🔹 בקשתך נשמרה.
     removed: |
@@ -252,9 +255,11 @@ settings:
             אוקיי, עכשיו אני מדבר בעברית 👌
             
     reactions: |
-        🔹 בחר/י אימוג'ים שהיו בשימוש לאחרונה מהמקלדת מטה או שלח/י אימוג'ים אחרים כדי להגדירם כברירת מחדל.
-        ניתן לבחור בין <b>אחד</b> ל- <b>שישיה</b> לחצני אימוג'ים.
+        🔹 Select last used buttons from below or send some new for set as default reactions.
 
+        For create text buttons use <b>"|"</b> symbol as separator.
+
+        You can use from <b>one</b> to <b>six</b> buttons for reactions in a row and no more <b>six</b> rows.
     keyboard: |
         🔹שלח/י לי כפתורים להגדה כברירת מחדל בצורה:
         
