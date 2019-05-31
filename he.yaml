@@ -52,6 +52,10 @@ post:
             {{UN('HANDBAG')}} Remove Attach
         caption: |
             {{UN('KEYBOARD')}} הוספת טקסט
+        text: |
+            📝 Edit Text
+        media: |
+            🌅 Replace Media
         wppreview: |
             {{UN('EYES')}} תצוגת קישורים: {%if post.data.wppreview%}דלוק{%else%}כבוי{%endif%}
         repost: |
@@ -60,6 +64,12 @@ post:
             {{UN('WASTEBASKET')}} מחק/י
         publish: |
             {{UN('OUTBOX TRAY')}} פרסום
+        edit: |
+            🖌️ Edit
+        save: |
+            💾 Save
+        revert: |
+            ⤴️ Revert
     error: |
         🔹 היתה בעיה ביצירת הפוסט כנראה בגלל בעיה בפורמט הכתיבה.
             
@@ -68,6 +78,20 @@ post:
         🔹 יש לבדוק שכתבת נכון.
     notsupport: |
         🔹 הרובוט לא תומך בסוג ההודעות הזה. 😔
+    edit: |
+        ⚠️ Warning!
+
+        While post in editing mode reactions will be accepted but post will not be updated!
+
+        All reactions will be updated after post be saved or reverted.
+    list: |
+        🔹 Your last published posts:
+    wait: |
+        🔸 Post now updating. Please wait few seconds to edit.
+    edited: |
+        🔹 Post was saved.
+
+        Content and reactions will be updated recently.
         
 format:
     html: |
@@ -181,6 +205,26 @@ attach:
         🔹 Attached!
     removed: |
         Attach was removed.
+
+media:
+    set: |
+        🔹 Send new media:
+    error: |
+        🔹 You can change media only to photo, audio, document, animation and video.
+
+        Please try another one.
+    saved: |
+        🔹 New media was saved.
+
+text:
+    set: |
+        🔹 Send new message text:
+    error: |
+        🔹 You can change text message only with text.
+
+        Please try another one.
+    saved: |
+        🔹 New text was saved.
 
 publish:
     kb:

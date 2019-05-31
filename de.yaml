@@ -52,6 +52,10 @@ post:
             {{UN('HANDBAG')}} Remove Attach
         caption: |
             {{UN('KEYBOARD')}} Untertitel bearbeiten
+        text: |
+            📝 Edit Text
+        media: |
+            🌅 Replace Media
         wppreview: |
             {{UN('EYES')}} Vorschau: {%if post.data.wppreview%}On{%else%}Off{%endif%}
         repost: |
@@ -60,6 +64,12 @@ post:
             {{UN('WASTEBASKET')}} Löschen
         publish: |
             {{UN('OUTBOX TRAY')}} Posten
+        edit: |
+            🖌️ Edit
+        save: |
+            💾 Save
+        revert: |
+            ⤴️ Revert
     error: |
         🔹 Beim Senden des Beitrags ein Fehler aufgetreten, wahrscheinlich ein Formatierungsfehler. 
             
@@ -68,6 +78,20 @@ post:
         🔹 Der Beitrag korregieren und wieder posten.
     notsupport: |
         🔹 Der Bot unterstützt nicht solche Art von Beiträge. 😔
+    edit: |
+        ⚠️ Warning!
+
+        While post in editing mode reactions will be accepted but post will not be updated!
+
+        All reactions will be updated after post be saved or reverted.
+    list: |
+        🔹 Your last published posts:
+    wait: |
+        🔸 Post now updating. Please wait few seconds to edit.
+    edited: |
+        🔹 Post was saved.
+
+        Content and reactions will be updated recently.
         
 format:
     html: |
@@ -181,6 +205,26 @@ attach:
         🔹 Attached!
     removed: |
         Attach was removed.
+
+media:
+    set: |
+        🔹 Send new media:
+    error: |
+        🔹 You can change media only to photo, audio, document, animation and video.
+
+        Please try another one.
+    saved: |
+        🔹 New media was saved.
+
+text:
+    set: |
+        🔹 Send new message text:
+    error: |
+        🔹 You can change text message only with text.
+
+        Please try another one.
+    saved: |
+        🔹 New text was saved.
 
 publish:
     kb:

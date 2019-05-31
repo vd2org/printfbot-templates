@@ -52,14 +52,24 @@ post:
             {{UN('HANDBAG')}} Remove Attach
         caption: |
             {{UN('KEYBOARD')}} Edit Caption
+        text: |
+            📝 Edit Text
+        media: |
+            🌅 Replace Media
         wppreview: |
             {{UN('EYES')}} Preview: {%if post.data.wppreview%}On{%else%}Off{%endif%}
         repost: |
-            ↪️ Allow repost: {%if post.repost%}On{%else%}Off{%endif%}
+            ↪️ Allow repost: {%if post.data.repost%}On{%else%}Off{%endif%}
         delete: |
             {{UN('WASTEBASKET')}} Delete
         publish: |
             {{UN('OUTBOX TRAY')}} Publish
+        edit: |
+            🖌️ Edit
+        save: |
+            💾 Save
+        revert: |
+            ⤴️ Revert
     error: |
         🔹 There was error while sending post probably because invalid formatting.
             
@@ -68,7 +78,21 @@ post:
         🔹 Try to fix formatting and send your post again.
     notsupport: |
         🔹 Bot does not support this kind of message. 😔
-        
+    edit: |
+        ⚠️ Warning!
+
+        While post in editing mode reactions will be accepted but post will not be updated!
+
+        All reactions will be updated after post be saved or reverted.
+    list: |
+        🔹 Your last published posts:
+    wait: |
+        🔸 Post now updating. Please wait few seconds to edit.
+    edited: |
+        🔹 Post was saved.
+
+        Content and reactions will be updated recently.
+
 format:
     html: |
         🔹 You set <b>html</b> style.
@@ -180,6 +204,26 @@ attach:
         🔹 Attached!
     removed: |
         Attach was removed.
+
+media:
+    set: |
+        🔹 Send new media:
+    error: |
+        🔹 You can change media only to photo, audio, document, animation and video.
+
+        Please try another one.
+    saved: |
+        🔹 New media was saved.
+
+text:
+    set: |
+        🔹 Send new message text:
+    error: |
+        🔹 You can change text message only with text.
+
+        Please try another one.
+    saved: |
+        🔹 New text was saved.
 
 publish:
     kb:
