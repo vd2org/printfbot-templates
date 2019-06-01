@@ -59,7 +59,7 @@ post:
         wppreview: |
             {{UN('EYES')}} תצוגת קישורים: {%if post.data.wppreview%}דלוק{%else%}כבוי{%endif%}
         repost: |
-            ↪️ Allow repost: {%if post.repost%}On{%else%}Off{%endif%}
+            ↪️ Allow repost: {%if repost%}On{%else%}Off{%endif%}
         delete: |
             {{UN('WASTEBASKET')}} מחק/י
         publish: |

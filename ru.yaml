@@ -59,7 +59,7 @@ post:
         wppreview: |
             {{UN('EYES')}} Предпросмотр: {%if post.data.wppreview%}Вкл.{%else%}Выкл.{%endif%}
         repost: |
-            ↪️ Разрешить перепост: {%if post.repost%}Вкл.{%else%}Выкл.{%endif%}
+            ↪️ Разрешить перепост: {%if repost%}Вкл.{%else%}Выкл.{%endif%}
         delete: |
             {{UN('WASTEBASKET')}} Удалить
         publish: |

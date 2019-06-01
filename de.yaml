@@ -59,7 +59,7 @@ post:
         wppreview: |
             {{UN('EYES')}} Vorschau: {%if post.data.wppreview%}On{%else%}Off{%endif%}
         repost: |
-            ↪️ Allow repost: {%if post.repost%}On{%else%}Off{%endif%}
+            ↪️ Allow repost: {%if repost%}On{%else%}Off{%endif%}
         delete: |
             {{UN('WASTEBASKET')}} Löschen
         publish: |
