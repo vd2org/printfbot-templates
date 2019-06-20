@@ -47,29 +47,29 @@ post:
         remove_keyboard: |
             {{UN('KEYBOARD')}} הסרת כפתורים
         attach: |
-            {{UN('HANDBAG')}} Attach
+            {{UN('HANDBAG')}} צרף מדיה
         remove_attach: |
-            {{UN('HANDBAG')}} Remove Attach
+            {{UN('HANDBAG')}} הסר מדיה
         caption: |
             {{UN('KEYBOARD')}} הוספת טקסט
         text: |
-            📝 Edit Text
+            📝 ערוך טקסט
         media: |
-            🌅 Replace Media
+            🌅 החלף מדיה
         wppreview: |
-            {{UN('EYES')}} תצוגת קישורים: {%if post.data.wppreview%}דלוק{%else%}כבוי{%endif%}
+            {{UN('EYES')}} תצוגת קישורים: {%if post.data.wppreview%}מופעל{%else%}כבוי{%endif%}
         repost: |
-            ↪️ Allow repost: {%if repost%}On{%else%}Off{%endif%}
+            ↪️ שיתוף הפוסט {%if repost%}מופעל{%else%}כבוי{%endif%}
         delete: |
             {{UN('WASTEBASKET')}} מחק/י
         publish: |
             {{UN('OUTBOX TRAY')}} פרסום
         edit: |
-            🖌️ Edit
+            🖌️ עריכה
         save: |
-            💾 Save
+            💾 שמירה
         revert: |
-            ⤴️ Revert
+            ⤴️ שיתוף הפוסט
     error: |
         🔹 היתה בעיה ביצירת הפוסט כנראה בגלל בעיה בפורמט הכתיבה.
             
@@ -79,19 +79,19 @@ post:
     notsupport: |
         🔹 הרובוט לא תומך בסוג ההודעות הזה. 😔
     edit: |
-        ⚠️ Warning!
+        ⚠️ שים לב!
 
-        While post in editing mode reactions will be accepted but post will not be updated!
+        בזמן שהפוסט במצב עריכה לחצני האימוג'י יהיו פעילים אך הפוסט שפורסם לא יתעדכן!
 
-        All reactions will be updated after post be saved or reverted.
+        הלחיצות יתעדכנו לאחר שישמר הפוסט.
     list: |
-        🔹 Your last published posts:
+        🔹 הפוסט האחרון שפרסמת:
     wait: |
-        🔸 Post now updating. Please wait few seconds to edit.
+        🔸 הפוסט מעודכן כעת. יש להמתין מספר שניות עד שהוא יערך.
     edited: |
-        🔹 Post was saved.
+        🔹 הפוסט נשמר.
 
-        Content and reactions will be updated recently.
+        התוכן הולחיצות יעודכנו.
         
 format:
     html: |
@@ -133,17 +133,17 @@ format:
         
 reactions:
     set: |
-        🔹 Select last used buttons from below or send some new for add reactions to post.
+        🔹 בחר/י לחצנים מהרשימה מטה או שלח/י חדשים כדי להוסיף לפוסט הנוכחי.
 
-        For create text buttons use <b>"|"</b> symbol as separator.
+        כדי לעשות לחצן עם טקסט יש להשתמש בסימן <b>"|"</b> בתור מפריד בין הלחצנים.
 
-        You can use from <b>one</b> to <b>six</b> buttons for reactions in a row and no more <b>six</b> rows.
+         ניתן ליצור רק בין <b>אחד</b> ל- <b>שישה</b> לחצנים בשורה ולא יותר מ- <b>שש</b> שורות.
     notfound: |
-        🔹 Wrong format.
-        You can use from <b>one</b> to <b>six</b> buttons for reactions in a row and no more <b>six</b> rows.
+        🔹 פורמט שגוי.
+        ניתן ליצור רק בין <b>אחד</b> ל- <b>שישה</b> לחצנים בשורה ולא יותר מ- <b>שש</b> שורות.
     toomany: |
-        🔹 Too many buttons for reactions.
-        You can use from <b>one</b> to <b>six</b> buttons for reactions in a row and no more <b>six</b> rows.
+        🔹 יש יותר מדי לחצנים.
+         ניתן ליצור רק בין <b>אחד</b> ל- <b>שישה</b> לחצנים בשורה ולא יותר מ- <b>שש</b> שורות.
     saved: |
         🔹 בקשתך נשמרה.
     removed: |
@@ -156,12 +156,12 @@ caption:
     set: |
         🔹 שלח/י טקסט להוספה להודעה או מחק/י אותו:
     error: |
-        🔹 There was error while sending post probably becouse invalid formatting.
+        🔹 היתה בעיה בשליחת הפוסט ככול הנראה בגלל בעיה בפורמט.
         {%if error%}
         <code>{{error}}</code>
         {%endif%}
 
-        Try to fix formatting and send your caption again.
+        נסה/י לתקן את הפורמט ולשלוח שוב את הפוסט.
     deleted: |
         🔹 הטקסט הוסר.
     saved: |
@@ -173,9 +173,9 @@ keyboard:
 
         <code>כפתור = http://example.com/</code>
 
-        To add repost-button set following:
+        כדי להוסיף כפתור לשיתוף הפוס שלח/י:
 
-        <code>Repost = REPOST</code>
+        <code>שיתוף = REPOST</code>
         
         ניתן לבחור בין <b>אחד</b> ל- <b>12</b> כפתורים.
     toomany: |
@@ -196,35 +196,35 @@ keyboard:
 
 attach:
     set: |
-        🔹 Send me photo or url to attach to the post:
+        🔹 שלח/י לי תמונה או קישור בכדי לצרף אל ההודעה:
 
         <code>https://example.com/</code>
     error: |
-        🔹 There was error while attaching. You can attach only photo or url.
+        🔹 היתה שגיאה בצירוף המדיה. ניתן לצרף רק תמונות או קישורים.
     saved: |
-        🔹 Attached!
+        🔹 צורף בהצלחה!
     removed: |
-        Attach was removed.
+        הוסרה התמונה / קישור.
 
 media:
     set: |
-        🔹 Send new media:
+        🔹 שלח/י מדיה חדשה:
     error: |
-        🔹 You can change media only to photo, audio, document, animation and video.
+        🔹 ניתן לשנות את המדיה רק לתמונה, קטע קול, קובץ, גיף או וידיאו.
 
-        Please try another one.
+        אנא נסה/י פריט מדיה אחר.
     saved: |
-        🔹 New media was saved.
+        🔹 המדיה החדשה נשמרה בהצלחה.
 
 text:
     set: |
-        🔹 Send new message text:
+        🔹 שלח/י הודעת טקסט חדשה:
     error: |
-        🔹 You can change text message only with text.
+        🔹 ניתן להחליף הודעת טקסט רק בטקסט.
 
-        Please try another one.
+        אנא נסה/י אחד אחר.
     saved: |
-        🔹 New text was saved.
+        🔹 הטקסט החדש נשמר בהצלחה.
 
 publish:
     kb:
@@ -256,20 +256,20 @@ inline:
         שלח פוסט
         {%endif%}
     error: |
-        Formatting error. Go to pm to help.
+        שגיאת פורמט. עבור לצ'אט עם הרובוט עבור עזרה נוספת.
     share:
         text: |
-            Share your text post.
+            שתף/י את הודעת הטקסט שלך.
         document: |
-            Share your document.
+            שתף/י את הקובץ שלך.
         animation: |
-            Share your animation.
+            שתף/י את הגיף שלך.
         video: |
-            Share your video.
+            שתף/י את הוידיאו שלך.
         sticker: |
-            Share your sticker.
+            שתף/י את הסטיקר שלך.
         voice: |
-            Share your voice.
+            שתף/י את קובץ השמע שלך.
 
 settings:
     kb:
@@ -288,7 +288,7 @@ settings:
         wppreview: |
             {{UN('EYES')}} תצוגת קישורים: {%if user.default_wppreview%}דלוק{%else%}כבוי{%endif%}
         repost: |
-            ↪️ Allow repost: {%if user.default_repost%}On{%else%}Off{%endif%}
+            ↪️ שיתוף פוסט: {%if user.default_repost%}מופעל{%else%}כבוי{%endif%}
  
     title: |
         אלו הן ההגדרות. בחר/י מה ברצונך לשנות:
@@ -299,20 +299,20 @@ settings:
             אוקיי, עכשיו אני מדבר בעברית 👌
             
     reactions: |
-        🔹 Select last used buttons from below or send some new for set as default reactions.
+        🔹 בחר/י לחצנים מהרשימה מטה או שלח/י חדשים כדי להוסיף ללחצני ברירת המחדל.
 
-        For create text buttons use <b>"|"</b> symbol as separator.
+        כדי לעשות לחצן עם טקסט יש להשתמש בסימן <b>"|"</b> בתור מפריד בין הלחצנים.
 
-        You can use from <b>one</b> to <b>six</b> buttons for reactions in a row and no more <b>six</b> rows.
+        ניתן ליצור רק בין <b>אחד</b> ל- <b>שישה</b> לחצנים בשורה ולא יותר מ- <b>שש</b> שורות.
     keyboard: |
         🔹שלח/י לי כפתורים להגדה כברירת מחדל בצורה:
         
         <code>כפתור = http://example.com/</code>
 
-        To add repost-button set following:
+        כדי להוסיף כפתור לשיתוף הפוס שלח/י:
 
-        <code>Repost = REPOST</code>
-
-        You can use from <b>one</b> to <b>12</b> buttons.
+        <code>שיתוף = REPOST</code>
+        
+        ניתן לבחור בין <b>אחד</b> ל- <b>12</b> כפתורים.
     keyboardpreview: |
         הצגת מקלדת...
