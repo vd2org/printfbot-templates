@@ -1,0 +1,322 @@
+﻿common:
+    btn:
+        cancel: |
+            {{UN('CROSS MARK','WORD JOINER')}} 取消
+        back: |
+            ↩️
+    cancelled: |
+        🔹 已取消，接下来做什么？
+    noposts: |
+        🔹 你还没有发布任何帖子 {{UN('THINKING FACE')}}
+    notfound: |
+        帖子已删除或发布
+    unknown: |
+        🤔 我不明白你在说什么？从菜单中选择一个命令
+    langname: |
+        🇨🇳 简体中文
+    
+home:
+    welcome: |
+        🔸 @printfbot v{{version}} - <b>推文格式化工具</b>.
+
+        给我发新帖子。 您可以发送文本，照片，音频，视频，语音或贴纸。
+
+        您选择了<b>{{user.parse_mode}}</b>格式。 您可以选择/html ，/markdown 或/native 格式。
+mainkb:
+    post: |
+        {{UN('WRITING HAND','EMOJI MODIFIER FITZPATRICK TYPE-1-2','WORD JOINER')}} 新推文
+    poll: |
+        {{UN('BALLOT BOX WITH BALLOT','WORD JOINER')}} 新投票
+    clean: |
+        {{UN('WASTEBASKET','WORD JOINER')}} 删除全部
+    preview: |
+        {{UN('EYES','WORD JOINER')}} 预览
+    settings: |
+        {{UN('HAMMER AND WRENCH','WORD JOINER')}} 设置
+    help: |
+        {{UN('BLACK QUESTION MARK ORNAMENT','WORD JOINER')}} 帮助
+
+post:
+    kb:
+        reactions: |
+            {{UN('THUMBS UP SIGN')}} 添加互动
+        remove_reactions: |
+            {{UN('THUMBS UP SIGN')}} 删除互动
+        keyboard: |
+            {{UN('KEYBOARD')}} 添加按钮
+        remove_keyboard: |
+            {{UN('KEYBOARD')}} 删除按钮
+        attach: |
+            {{UN('HANDBAG')}} 自定义预览链接
+        remove_attach: |
+            {{UN('HANDBAG')}} 删除自定义预览
+        caption: |
+            {{UN('KEYBOARD')}} 编辑标题
+        text: |
+            📝 编辑文本
+        media: |
+            🌅 替换媒体文件
+        wppreview: |
+            {{UN('EYES')}} 链接预览：{%if post.data.wppreview%}启用{%else%}禁用{%endif%}
+        repost: |
+            ↪️ 允许转贴: {%if repost%}启用{%else%}禁用{%endif%}
+        delete: |
+            {{UN('WASTEBASKET')}} 删除
+        publish: |
+            {{UN('OUTBOX TRAY')}} 发布
+        edit: |
+            🖌️ 编辑
+        save: |
+            💾 保存
+        revert: |
+            ⤴️ 还原
+    error: |
+        🔹 在发送帖子时出错，可能是因为格式错误或无效。
+            
+        <code>{{error}}</code>
+        
+        🔹 试着修正格式并再次发送您的帖子。
+    notsupport: |
+        🔹 本Bot不支持这种消息。 😔
+    edit: |
+        ⚠️ 警告!
+
+        当帖子在编辑模式下，互动将被接受，但帖子不会被更新!
+
+        所有的互动将更新后，帖子被保存或恢复。
+    list: |
+        🔹 你最近发布的帖子:
+    wait: |
+        🔸 帖子正在更新。请在几秒钟后编辑。
+    edited: |
+        🔹 修改已保存
+
+        内容和互动将在近期更新。
+
+format:
+    html: |
+        🔹 你选择了<b>html</b>样式。
+        
+        <b>粗体</b>
+        <code>&lt;b&gt;粗体&lt;/b&gt; or &lt;strong&gt;粗体&lt;/strong&gt;</code>
+        
+        <i>斜体</i>
+        <code>&lt;i&gt;斜体&lt;/i&gt; or &lt;em&gt;斜体&lt;/em&gt;</code>
+        
+        <a href="https://t.me/sharecentre">超链接</a>
+        <code>&lt;a href="https://t.me/sharecentre"&gt;超链接&lt;/a&gt;</code>
+        
+        <code>inline fixed-width</code>
+        <code>&lt;code&gt;inline fixed-width&lt;/code&gt;</code>
+        
+        <pre>pre-formatted fixed-width block</pre>
+        <code>&lt;pre&gt;pre-formatted fixed-width code block&lt;/pre&gt;</code>
+    markdown: |
+        🔹 你选择了<b>markdown</b>样式。
+        
+        <b>粗体</b>
+        <code>*粗体*</code>
+        
+        <i>斜体</i>
+        <code>_斜体_</code>
+        
+        <a href="https://t.me/sharecentre">超链接</a>
+        <code>[text](https://t.me/sharecentre)</code>
+        
+        <code>inline fixed-width</code>
+        <code>`inline fixed-width code`</code>
+        
+        <pre>pre-formatted fixed-width block</pre>
+        <code>```pre-formatted fixed-width block```</code>
+    native: |
+        🔹 你选择了<b>native</b>样式。在本地客户端格式化或从其他位置转发帖子时，请使用此模式。
+        
+reactions:
+    set: |
+        🔹 从下面选择最后使用的按钮，或发送一些新按钮以添加要发布的互动。
+
+        对于创建文本按钮，请使用<b>“ |” </ b>符号作为分隔符。
+
+        你可以使用<b>1</b>到<b>6</b>按钮在一行，而不需要<b>6</b>行。
+    notfound: |
+        🔹错误的格式。
+        你可以使用<b>1</b>到<b>6</b>按钮在一行，而不需要<b>6</b>行。
+    toomany: |
+        🔹 按钮过多。
+        你可以使用<b>1</b>到<b>6</b>按钮在一行，而不需要<b>6</b>行。
+    saved: |
+        🔹 已保存
+    removed: |
+        已删除 
+        
+caption:
+    kb:
+        delete: |
+            {{UN('WASTEBASKET','WORD JOINER')}} 删除标题
+    set: |
+        🔹 发送标题文本或删除标题文本:
+    error: |
+        🔹 发送推文时出现错误，可能是格式无效。
+        {%if error%}
+        <code>{{error}}</code>
+        {%endif%}
+
+        试着修正格式并再次发送你的标题。
+    deleted: |
+        🔹 已删除
+    saved: |
+        🔹 已保存
+        
+keyboard:
+    set: |
+        🔹 请按以下格式发送给我用于添加的键盘:
+        
+        <code>标题 = https://t.me/sharecentre</code>
+
+        添加重新发送按钮设置如下:
+
+        <code>Repost = REPOST</code>
+        
+        你可以添加<b>1</b>到<b>12</b>个按钮。
+    toomany: |
+        🔹 按钮过多。
+        你可以添加<b>1</b>到<b>12</b>个按钮。
+    error: |
+        🔹 发送推文时出现错误，可能是格式无效。
+        {%if error%}    
+        <code>{{error}}</code>
+        {%endif%}
+        
+        试着修正格式并再次发送您的键盘。
+    saved: |
+        🔹 已保存
+    removed: |
+        🔹 已删除
+
+attach:
+    set: |
+        🔹 给我发送照片或url来附加到帖子:
+
+        <code>https://t.me/sharecentre</code>
+    error: |
+        🔹 连接时出现错误。您只能附加照片或url。
+    saved: |
+        🔹 已连接
+    removed: |
+        🔹 已删除
+
+media:
+    set: |
+        🔹 给我发送一个媒体文件
+    error: |
+        🔹 您可以更改媒体仅照片，音频，文件，动画和视频。
+
+        请再试一次。
+    saved: |
+        🔹 已保存
+
+text:
+    set: |
+        🔹 发送新消息文本:
+    error: |
+        🔹 您只能用文本更改文本消息。
+
+        请再试一次。
+    saved: |
+        🔹 新消息已保存
+
+publish:
+    kb:
+        share: |
+            {{UN('PAGE WITH CURL')}} 分享
+    published: |
+        ✅ 您的帖子做好了。 现在您可以将其分享到您的频道或群组。
+            
+vote: 
+    processed: |
+        {%if remove%}你的投票已删除{%else%}你的投票被接受{%endif%}
+        {%if later%} 帖子将很快更新。{%endif%}
+    notfound: |
+        抱歉，这是一个未知或已删除的帖子。{{UN('PENSIVE FACE')}}
+        
+delete: 
+    deleted: |
+        帖子已删除。 {{UN('PENSIVE FACE')}} 
+    deletedall: |
+        🔹 您的全部帖子已删除 {{UN('PENSIVE FACE')}}
+        
+inline:
+    new: |
+        在机器人上写新帖子。
+    post: |
+        {%if emojis%}
+        发送与 {{emojis|join(' / ')}}
+        {%else%}
+        发送帖子
+        {%endif%}
+    error: |
+        格式错误。请私聊来获取帮助。
+    share:
+        text: |
+            分享你的帖子。
+        document: |
+            分享你的文章。
+        animation: |
+            分享你的动画。
+        video: |
+            分享你的视频。
+        sticker: |
+            分享你的贴纸。
+        voice: |
+            分享你的语音。
+
+settings:
+    kb:
+        lang: |
+            {{UN('GLOBE WITH MERIDIANS')}} 机器人语言
+        format: |
+            {{UN('MEMO')}} 当前格式：{{user.parse_mode}}
+        reactions: |
+            {{UN('THUMBS UP SIGN')}} 默认互动
+        delreactions: |
+            {{UN('THUMBS UP SIGN')}} 移除默认互动
+        keyboard: |
+            {{UN('KEYBOARD')}} 默认按钮
+        delkeyboard: |
+            {{UN('KEYBOARD')}} 移除默认按钮
+        wppreview: |
+            {{UN('EYES')}} 链接预览 {%if user.default_wppreview%}启用{%else%}禁用{%endif%}
+        repost: |
+            ↪️ 允许转贴 {%if user.default_repost%}启用{%else%}禁用{%endif%}
+ 
+    title: |
+        这是设置。选择您想要更改的:
+    lang:
+        select: |
+            现在我用<b>简体中文</b>和你交谈。你想让我改说哪一种语言?
+
+            <i>如果你想翻译次机器人，你可以点击这里:</i>
+
+            https://github.com/vd2org/printfbot-templates
+        selected: |
+            好的，现在我将用<b>简体中文</b>和你说话。👌
+            
+    reactions: |
+        🔹 从下面选择最后使用的按钮或发送一些新的设置为默认互动。
+
+        对于创建文本按钮，请使用<b>“ |” </ b>符号作为分隔符。
+
+        你可以使用<b>1</b>到<b>6</b>按钮在一行，而不需要<b>6</b>行。
+
+    keyboard: |
+        🔹 请按以下格式发送给我用于添加的键盘:
+        
+        <code>标题 = https://t.me/sharecentre</code>
+
+        添加重新发送按钮设置如下:
+
+        <code>Repost = REPOST</code>
+        
+        你可以添加<b>1</b>到<b>12</b>个按钮。
+    keyboardpreview: |
+        键盘预览……
