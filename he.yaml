@@ -22,19 +22,6 @@ home:
         שלח/י הודעה לייצירת פוסט חדש. ניתן לשלוח טקסט, תמונה, קובץ שמע, סרטון, הקלטה או מדבקה.
 
         בחרת <b>{{user.parse_mode}}</b>. ניתן לבחור /html, /markdown או /native formatting mode.
-mainkb:
-    post: |
-        {{UN('WRITING HAND','EMOJI MODIFIER FITZPATRICK TYPE-1-2','WORD JOINER')}} פוסט חדש
-    poll: |
-        {{UN('BALLOT BOX WITH BALLOT','WORD JOINER')}} סקר חדש
-    clean: |
-        {{UN('WASTEBASKET','WORD JOINER')}} מחק/י הכל
-    preview: |
-        {{UN('EYES','WORD JOINER')}} תצוגה מקדימה
-    settings: |
-        {{UN('HAMMER AND WRENCH','WORD JOINER')}} הגדרות
-    help: |
-        {{UN('BLACK QUESTION MARK ORNAMENT','WORD JOINER')}} עזרה
 
 post:
     kb:

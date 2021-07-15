@@ -22,19 +22,6 @@ home:
         Schicken Sie mir bitte einen neuen Beitrag. Sie können Text, Foto, Audio, Video, Stimme oder Aufkleber senden.
 
         Ihre Formatierungsmodus ist <b>{{user.parse_mode}}</b>. Sie können /html, /markdown oder /native auswählen.
-mainkb:
-    post: |
-        {{UN('WRITING HAND','EMOJI MODIFIER FITZPATRICK TYPE-1-2','WORD JOINER')}} Neuer Beitrag
-    poll: |
-        {{UN('BALLOT BOX WITH BALLOT','WORD JOINER')}} Neue Umfrage
-    clean: |
-        {{UN('WASTEBASKET','WORD JOINER')}} Alles löschen!
-    preview: |
-        {{UN('EYES','WORD JOINER')}} Vorschau
-    settings: |
-        {{UN('HAMMER AND WRENCH','WORD JOINER')}} Einstellungen
-    help: |
-        {{UN('BLACK QUESTION MARK ORNAMENT','WORD JOINER')}} Hilfe
 
 post:
     kb:

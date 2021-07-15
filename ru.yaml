@@ -22,19 +22,6 @@ home:
         Отправьте мне новый пост. Вы можете отправить текст, фотографию, аудио, видео, войс или стикер.
 
         Выбран <b>{{user.parse_mode}}</b> режим форматирования. Вы можете выбрать /html, /markdown или /native режим.
-mainkb:
-    post: |
-        {{UN('WRITING HAND','EMOJI MODIFIER FITZPATRICK TYPE-1-2','WORD JOINER')}} Новый пост
-    poll: |
-        {{UN('BALLOT BOX WITH BALLOT','WORD JOINER')}} Новое голосование
-    clean: |
-        {{UN('WASTEBASKET','WORD JOINER')}} Удалить всё!
-    preview: |
-        {{UN('EYES','WORD JOINER')}} Предпросмотр
-    settings: |
-        {{UN('HAMMER AND WRENCH','WORD JOINER')}} Настройки
-    help: |
-        {{UN('BLACK QUESTION MARK ORNAMENT','WORD JOINER')}} Инструкции
 
 post:
     kb:

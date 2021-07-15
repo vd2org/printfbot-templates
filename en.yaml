@@ -22,19 +22,6 @@ home:
         Send me new post. You can send text, photo, audio, video, voice or sticker.
 
         You select <b>{{user.parse_mode}}</b> formatting. You can select /html, /markdown or /native formatting mode.
-mainkb:
-    post: |
-        {{UN('WRITING HAND','EMOJI MODIFIER FITZPATRICK TYPE-1-2','WORD JOINER')}} New Post
-    poll: |
-        {{UN('BALLOT BOX WITH BALLOT','WORD JOINER')}} New Poll
-    clean: |
-        {{UN('WASTEBASKET','WORD JOINER')}} Delete All
-    preview: |
-        {{UN('EYES','WORD JOINER')}} Preview
-    settings: |
-        {{UN('HAMMER AND WRENCH','WORD JOINER')}} Settings
-    help: |
-        {{UN('BLACK QUESTION MARK ORNAMENT','WORD JOINER')}} Help
 
 post:
     kb:
