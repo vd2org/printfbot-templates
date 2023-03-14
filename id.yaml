@@ -1,0 +1,309 @@
+﻿common:
+    btn:
+        cancel: |
+            {{UN('CROSS MARK','WORD JOINER')}} Cancel
+        back: |
+            ↩️
+    cancelled: |
+        🔹 Dibatalkan. Apa selanjutnya?
+    noposts: |
+        🔹 Anda tidak memiliki postingan apa pun. {{UN('THINKING FACE')}}
+    notfound: |
+        Postingan telah dihapus atau dipublikasikan.
+    unknown: |
+        🤔 Saya tidak mengerti. Pilih perintah dari menu.
+    langname: |
+        🇲🇨 Indonesia 
+    
+home:
+    welcome: |
+        🔸 @printfbot v{{version}} - <b>alat pemformatan pos pisau swiss</b>.
+
+        Kirimi saya posting baru. Anda dapat mengirim teks, foto, audio, video, suara atau stiker.
+
+        Anda memilih <b>{{user.parse_mode}}</b> pemformatan. Anda dapat memilih /html, /markdown atau /native mode pemformatan.
+
+post:
+    kb:
+        reactions: |
+            {{UN('THUMBS UP SIGN')}} Tambahkan Reaksi
+        remove_reactions: |
+            {{UN('THUMBS UP SIGN')}} Hapus Reaksi
+        keyboard: |
+            {{UN('KEYBOARD')}} Tambahkan Tombol
+        remove_keyboard: |
+            {{UN('KEYBOARD')}} Hapus Tombol
+        attach: |
+            {{UN('HANDBAG')}} Menempel
+        remove_attach: |
+            {{UN('HANDBAG')}} Hapus Lampirkan
+        caption: |
+            {{UN('KEYBOARD')}} Sunting Teks
+        text: |
+            📝 Sunting Teks
+        media: |
+            🌅 Ganti Media
+        wppreview: |
+            {{UN('EYES')}} Pratinjau: {%if post.data.wppreview%}On{%else%}Off{%endif%}
+        repost: |
+            ↪️ Izinkan memposting ulang: {%if repost%}On{%else%}Off{%endif%}
+        delete: |
+            {{UN('WASTEBASKET')}} Menghapus
+        publish: |
+            {{UN('OUTBOX TRAY')}} Menerbitkan
+        edit: |
+            🖌️ Sunting
+        save: |
+            💾 Menyimpan
+        revert: |
+            ⤴️ Kembali
+    error: |
+        🔹 Ada kesalahan saat mengirim posting mungkin karena pemformatan yang tidak valid.
+            
+        <code>{{error}}</code>
+        
+        🔹 Coba perbaiki pemformatan dan kirim kembali postingan Anda.
+    notsupport: |
+        🔹 Bot tidak mendukung pesan semacam ini. 😔
+    edit: |
+        ⚠️ Warning!
+
+        Sementara posting dalam mode edit, reaksi akan diterima tetapi posting tidak akan diperbarui!
+
+        Semua reaksi akan diperbarui setelah kiriman disimpan atau dikembalikan.
+    list: |
+        🔹 Postingan terakhir Anda yang diterbitkan:
+    wait: |
+        🔸 Posting sekarang memperbarui. Harap tunggu beberapa detik untuk mengedit.
+    edited: |
+        🔹 Postingan telah disimpan.
+
+        Konten dan reaksi akan diperbarui baru-baru ini.
+
+format:
+    html: |
+        🔹 Anda mengatur <b>html</b> style.
+        
+        <b>bold text</b>
+        <code>&lt;b&gt;bold&lt;/b&gt; or &lt;strong&gt;bold&lt;/strong&gt;</code>
+        
+        <i>italic text</i>
+        <code>&lt;i&gt;italic&lt;/i&gt; or &lt;em&gt;italic&lt;/em&gt;</code>
+        
+        <a href="http://www.example.com/">inline URL</a>
+        <code>&lt;a href="http://www.example.com/"&gt;inline URL&lt;/a&gt;</code>
+        
+        <code>inline fixed-width</code>
+        <code>&lt;code&gt;inline fixed-width&lt;/code&gt;</code>
+        
+        <pre>pre-formatted fixed-width block</pre>
+        <code>&lt;pre&gt;pre-formatted fixed-width code block&lt;/pre&gt;</code>
+    markdown: |
+        🔹 You set <b>markdown</b> style.
+        
+        <b>bold text</b>
+        <code>*bold text*</code>
+        
+        <i>italic text</i>
+        <code>_italic text_</code>
+        
+        <a href="http://www.example.com/">inline URL</a>
+        <code>[text](http://www.example.com/)</code>
+        
+        <code>inline fixed-width</code>
+        <code>`inline fixed-width code`</code>
+        
+        <pre>pre-formatted fixed-width block</pre>
+        <code>```pre-formatted fixed-width block```</code>
+    native: |
+        🔹 Anda mengatur <b>warga asli</b> gaya. Gunakan mode ini untuk pemformatan klien asli atau saat meneruskan pesan dari tempat lain.
+        
+reactions:
+    set: |
+        🔹 Pilih tombol yang terakhir digunakan dari bawah atau kirim yang baru untuk menambahkan reaksi ke pos.
+
+        Untuk membuat tombol teks gunakan <b>"|"</b> simbol sebagai pemisah.
+
+        Anda dapat menggunakan dari <b>satu</b> to <b>enam</b> tombol untuk reaksi berturut-turut dan tidak lebih <b>enam</b> baris.
+    notfound: |
+        🔹 Wrong format.
+        Anda dapat menggunakan dari <b>satu</b> ke <b>enam</b> tombol untuk reaksi berturut-turut dan tidak lebih <b>enam</b> baris.
+    toomany: |
+        🔹 Too many buttons for reactions.
+        Anda dapat menggunakan dari <b>satu</b> ke <b>enam</b> tombol untuk reaksi berturut-turut dan tidak lebih <b>enam</b> baris.
+    saved: |
+        🔹 Reaksi disimpan.
+    removed: |
+        Reaksi telah dihapus.  
+        
+caption:
+    kb:
+        delete: |
+            {{UN('WASTEBASKET','WORD JOINER')}} Hapus keterangan
+    set: |
+        🔹 Kirim teks untuk keterangan atau hapus:
+    error: |
+        🔹 Ada kesalahan saat mengirim posting mungkin karena pemformatan yang tidak valid.
+        {%if error%}
+        <code>{{error}}</code>
+        {%endif%}
+
+        Coba perbaiki pemformatan dan kirim lagi teks Anda.
+    deleted: |
+        🔹 Teks telah dihapus.
+    saved: |
+        🔹 Teks telah disimpan.
+        
+keyboard:
+    set: |
+        🔹 Kirimi saya keyboard untuk ditambahkan ke posting dalam format berikut:
+        
+        <code>Caption = http://example.com/</code>
+
+        Untuk menambahkan set tombol repost mengikuti:
+
+        <code>repost = REPOST</code>
+        
+        Anda dapat menggunakan dari <b>satu</b> ke <b>12</b> tombol.
+    toomany: |
+        🔹 Terlalu banyak tombol.
+        Anda dapat menggunakan dari <b>satu</b> ke <b>12</b> tombol.
+    error: |
+        🔹 Ada kesalahan saat mengirim posting mungkin karena pemformatan yang tidak valid.
+        {%if error%}    
+        <code>{{error}}</code>
+        {%endif%}
+        
+        Coba perbaiki pemformatan dan kirim kembali keyboard Anda.
+    saved: |
+        🔹 Keyboard telah disimpan.
+    removed: |
+        Keyboard telah dihapus.
+
+attach:
+    set: |
+        🔹 Kirimi saya foto atau url untuk dilampirkan ke pos:
+
+        <code>https://example.com/</code>
+    error: |
+        🔹 Terjadi kesalahan saat melampirkan. Anda hanya dapat melampirkan foto atau url.
+    saved: |
+        🔹 Terlampir!
+    removed: |
+        Lampirkan telah dihapus.
+
+media:
+    set: |
+        🔹 Kirim media baru:
+    error: |
+        🔹 Anda dapat mengubah media hanya menjadi foto, audio, dokumen, animasi, dan video.
+
+        Silakan coba yang lain.
+    saved: |
+        🔹 Media baru telah disimpan.
+
+text:
+    set: |
+        🔹 Kirim teks pesan baru:
+    error: |
+        🔹 Anda dapat mengubah pesan teks hanya dengan teks.
+
+        Silakan coba yang lain.
+    saved: |
+        🔹 Teks baru telah disimpan.
+
+publish:
+    kb:
+        share: |
+            {{UN('PAGE WITH CURL')}} Membagikan...
+    published: |
+        ✅ Posting Anda akan di-cookie selesai. Sekarang Anda dapat membagikannya ke saluran atau grup Anda.
+            
+vote: 
+    processed: |
+        {%if remove%}Suara Anda dihapus.{%else%}Your vote accepted.{%endif%}
+        {%if later%} Postingan akan segera diupdate.{%endif%}
+    notfound: |
+        Posting tidak dikenal atau dihapus. Maaf! {{UN('PENSIVE FACE')}}
+        
+delete: 
+    deleted: |
+        Pos telah dihapus. {{UN('PENSIVE FACE')}} 
+    deletedall: |
+        🔹 Semua posting Anda telah dihapus. {{UN('PENSIVE FACE')}}
+        
+inline:
+    new: |
+        Tulis posting baru di bot.
+    post: |
+        {%if emojis%}
+        Kirim pos dengan {{emojis|join(' / ')}}
+        {%else%}
+        Kirim pos
+        {%endif%}
+    error: |
+        Kesalahan pemformatan. Pergi ke pm untuk membantu.
+    share:
+        text: |
+            Bagikan kiriman teks Anda.
+        document: |
+            Bagikan dokumen Anda.
+        animation: |
+            Bagikan animasi Anda.
+        video: |
+            Bagikan video Anda.
+        sticker: |
+            Bagikan stiker Anda.
+        voice: |
+            Bagikan suara Anda.
+
+settings:
+    kb:
+        lang: |
+            {{UN('GLOBE WITH MERIDIANS')}} Bahasa bot
+        format: |
+            {{UN('MEMO')}} Format: {{user.parse_mode}}
+        reactions: |
+            {{UN('THUMBS UP SIGN')}} Reaksi bawaan
+        delreactions: |
+            {{UN('THUMBS UP SIGN')}} Hapus reaksi Default
+        keyboard: |
+            {{UN('KEYBOARD')}} Tombol bawaan
+        delkeyboard: |
+            {{UN('KEYBOARD')}} Hapus tombol Default
+        wppreview: |
+            {{UN('EYES')}} Pratinjau tautan: {%if user.default_wppreview%}On{%else%}Off{%endif%}
+        repost: |
+            ↪️ Izinkan memposting ulang: {%if user.default_repost%}On{%else%}Off{%endif%}
+ 
+    title: |
+        Ada pengaturan. Pilih apa yang ingin Anda ubah:
+    lang:
+        select: |
+            Saat ini saya berbicara dengan Anda dalam bahasa Indonesia. Anda ingin saya beralih ke bahasa apa?
+
+            <i>Jika Anda ingin berbicara dengan bot dalam bahasa Anda, Anda dapat menerjemahkannya di sini:</i>
+
+            https://github.com/vd2org/printfbot-templates
+        selected: |
+            Oke, sekarang saya akan berbicara dengan Anda dalam bahasa 🇲🇨Indonesia 👌
+            
+    reactions: |
+        🔹 Pilih tombol yang terakhir digunakan dari bawah atau kirim yang baru untuk disetel sebagai reaksi default.
+
+        Untuk membuat tombol teks gunakan <b>"|"</b> simbol sebagai pemisah.
+
+        Anda dapat menggunakan dari <b>satu</b> ke <b>enam</b> tombol untuk reaksi berturut-turut dan tidak lebih <b>enam</b> baris.
+
+    keyboard: |
+        🔹 Kirimi saya keyboard untuk disetel sebagai default dalam format berikut:
+        
+        <code>Caption = http://example.com/</code>
+
+        Menambahkan repost-set tombol mengikuti:
+
+        <code>Repost = REPOST</code>
+
+        Anda dapat menggunakan dari <b>one</b> ke <b>12</b> tombol.
+    keyboardpreview: |
+        Pratinjau keyboard...
